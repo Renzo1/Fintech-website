@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16px */
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1, h2, p {
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* Hero Section */
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0, 0.6)), url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.logo h1 {
+  font-size: 3.2rem;
+  color: #4CAF50;
+  margin: 0;
+}
+
+nav {
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav box-icon {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 2.5rem;
+}
+
+nav ul li a:hover {
+  color: #4CAF50;
+  transition: 0.5s ease-in-out;
+}
+
+
+/* Header content */
+.header-content{
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 8%;
+}
+
+form{
+  margin: 2.4rem 2.4rem 2.4rem  0;
+}
+input{
+  font-size: 1.8rem;
+}
+input[type=text],
+input[type=email]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 1.2rem 0;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+input[type=submit]{
+  width: 50%;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input::placeholder{
+  font-size: 1.3rem;
+}
+
+
+/* About Section */
+.about-left, .about-middle, .about-right{
+  padding: 1.6rem;
+  flex-basis: 25rem;
+  flex-grow: 1;
+  margin: 1rem;
+  align-self: flex-start;
+  /* background-color: blue; */
+}
+.btn{
+  background-color: #4CAF50;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* About2 Section */
+.about2{
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  color: whitesmoke;
+}
+.about2-left, .about-right{
+  flex-basis: 45rem;
+  flex-grow: 1;
+}
+.about-right{
+  justify-content: space-around;
+}
+.card{
+  background-color: #ccc;
+  color: black;
+  flex-basis: 45%;
+  margin: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-content: space-between;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Process Section */
+.process .row{
+  justify-content: center;
+}
+
+.process-content{
+  margin-top: 10rem;
+}
+
+.progress-bar{
+  width: 80%;
+  height: 2px;
+  background-color: #222;
+  margin: auto;
+  position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #222;
+  position: absolute;
+}
+
+.progress-bar .c1{
+  top:-8px;
+  left: 50px;
+}
+
+.progress-bar .c2{
+  top:-8px;
+  left: 50%;
+}
+
+.progress-bar .c3{
+  top:-8px;
+  right: 50px;
+}
+
+.box1,
+.box2,
+.box3{
+  padding: 1.8rem;
+  flex-basis: 27rem;
+}
+.process .box2{
+  text-align: center;
+}
+.process .box3{
+  text-align: right;
+}
+
+.process-content h2{
+  color: #4CAF50;
+}
+
+/* Testimony */
+.testimony{
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.test{
+  background-color: #505050;
+  flex-basis: 45rem;
+  flex-grow: 1;
+  margin: 1rem;
+}
+.test img{
+  width: 15%;
+  margin: 5% 15%;
+  border-radius: 50%;
+}
+.test-content{
+  margin: 0 15% 10% 15%;
+  line-height: 2;
+}
+.icons box-icon{
+  background-color: gold; /*place holder color fill -- having troubles with box icon CDN*/
+  border-radius: 50%;
+}
+
+/* Contact */
+.contact .row{
+  justify-content: center;
+}
+.contact form{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact form input{
+  width: 50%;
+}
+.contact textarea{
+  width: 50%;
+  height: 15rem;
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  border: 0.1rem solid #ccc;
+  resize: none;
+  color: #ccc;
+  margin: 1.2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+footer{
+  min-height: 8rem;
+  background-color: #222;
+  color: #fff;
+  line-height: 8rem;
+  text-align: center;
+  margin: 0;
+}
+footer p{
+  margin: 0;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 845px){
+  .row{
+    flex-direction: column;
+    }
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  nav box-icon{
+    background-color: whitesmoke; /*place holder color fill -- having troubles with box icon CDN*/
+    display: block;
+    position: absolute;
+    top: 1.125rem;
+    right: 2rem;
+  }
+  nav ul{
+    background: whitesmoke;
+    display: none;
+  }
+  .showmenu{
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    padding: 2% 0;
+  }
+  nav ul li a {
+    color: #222;
+  }
+  .header-content{
+    width: 100%;
+    top: 16%;
+    left:0;
+    text-align: center;
+    padding: 3%;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=submit]{
+    width: 50%;
+    margin: 1.2rem auto;
+  }
+  .progress-bar{
+    display: none;
+  }
+  .process-content{
+    margin-top: 2rem;
+  }
+  .process .box1,
+  .process .box2,
+  .process .box3{
+    text-align: center;
+  }
+
+  .contact form input,
+  .contact textarea{
+    width: 100%;
+  }
+}
